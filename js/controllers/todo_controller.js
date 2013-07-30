@@ -4,10 +4,10 @@ Todos.TodoController = Ember.ObjectController.extend({
 
     if (value === undefined) {
       // property being used as a getter
-      return model.get('is_completed');
+      return model.get('isCompleted');
     } else {
       // property being used as a setter
-      model.set('is_completed', value);
+      model.set('isCompleted', value);
       model.save();
       return value;
     }
